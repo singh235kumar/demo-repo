@@ -1,0 +1,44 @@
+.switch-container {
+  display: flex;
+  align-items: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 8px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: -3px; /* Move the slider up by adjusting the top value */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #4CAF50; /* Green background color */
+  transition: 0.4s;
+  border-radius: 10px; /* Adjusted for a thinner slider */
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 20px; /* Increase the size of the circle */
+  width: 20px; /* Increase the size of the circle */
+  background-color: green; /* White slider color */
+  transition: 0.4s;
+  border-radius: 50%;
+  transform: translateX(5px) translateY(-5px); 
+}
+
+.switch input:checked + .slider {
+  background-color: #4CAF50; /* Green background color when checked */
+}

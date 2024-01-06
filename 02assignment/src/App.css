@@ -1,0 +1,25 @@
+/* App.css */
+@media (max-width: 600px) {
+    /* Add styles specific to smaller screens */
+    /* For example, you might want to reduce margins or font sizes */
+    .your-class {
+      margin: 5px;
+      font-size: 14px;
+    }
+  }
+  
+  /* iPhone SE */
+@media only screen 
+and (max-device-width: 320px) 
+and (max-device-height: 568px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+/* Your styles for iPhone SE go here */
+}
+
+/* Additional styles for landscape mode */
+@media only screen 
+and (max-device-width: 568px) 
+and (max-device-height: 320px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+/* Your landscape styles for iPhone SE go here */
+}
